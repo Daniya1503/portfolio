@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abinayasree (Siri) Muthusamy | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #0077b5;
+      --primary-dark: #005582;
+      --bg-light: #f8f9fa;
+      --card-bg: #ffffff;
+      --text-dark: #212529;
+      --text-muted: #6c757d;
+      --border-color: #e9ecef;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-dark); background-color: var(--bg-light); }
+    a { text-decoration: none; color: var(--primary); }
+
+    /* Header & Navigation */
+    header { background-color: #ffffff; border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000; }
+    .nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; }
+    .logo { font-size: 1.25rem; font-weight: bold; color: var(--primary-dark); }
+    .nav-links { list-style: none; display: flex; gap: 1.5rem; }
+    .nav-links a { color: var(--text-dark); font-weight: 500; transition: color 0.3s; }
+    .nav-links a:hover { color: var(--primary); }
+
+    /* Section Styling */
+    section { padding: 4rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .section-title { font-size: 1.8rem; margin-bottom: 2rem; color: var(--primary-dark); border-bottom: 2px solid var(--primary); display: inline-block; padding-bottom: 0.25rem; }
+
+    /* Hero Section */
+    .hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding-top: 3rem; }
+    .hero-title { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-dark); }
+    .hero-subtitle { font-size: 1.2rem; color: var(--primary); font-weight: 600; margin-bottom: 1rem; }
+    .hero-tagline { max-width: 700px; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .btn { display: inline-block; background-color: var(--primary); color: #fff; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: 600; transition: background 0.3s; }
+    .btn:hover { background-color: var(--primary-dark); color: #fff; }
+
+    /* Cards & Grids */
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    
+    .card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 1.5rem; transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+
+    /* Experience Timeline */
+    .timeline-item { border-left: 3px solid var(--primary); padding-left: 1.5rem; margin-bottom: 2rem; position: relative; }
+    .timeline-item::before { content: ''; width: 12px; height: 12px; background: var(--primary); position: absolute; left: -7.5px; top: 4px; border-radius: 50%; }
+    .role-title { font-size: 1.1rem; font-weight: bold; }
+    .company-name { color: var(--primary-dark); font-weight: 600; }
+    .date-range { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+
+    /* Badges / Chips */
+    .badge-container { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+    .badge { background-color: #e8f4f9; color: var(--primary-dark); font-size: 0.85rem; padding: 0.3rem 0.6rem; border-radius: 4px; font-weight: 500; }
+
+    /* Footer */
+    footer { background-color: #ffffff; border-top: 1px solid var(--border-color); text-align: center; padding: 2rem 1.5rem; color: var(--text-muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">Abinayasree Muthusamy</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="hero-title">Abinayasree (Siri) Muthusamy</h1>
+    <div class="hero-subtitle">Marketing Consultant | EdTech Strategist | Ex-Accenture Engineer</div>
+    <p class="hero-tagline">
+      Bridging software engineering, data analysis, and EdTech innovation. IIT Madras Carbon Zero Challenge Awardee and Best Outgoing Student in Extracurriculars (Kongu Engineering College).
+    </p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+      <p>
+        I started my career as a Software Engineer at Accenture, learning how technology solves real-world problems. Today, I apply that structured, practical mindset to EdTech, competitive exam guidance (Officer-level exams like IBPS, SSC, TNPSC), and digital marketing.
+      </p>
+      <br />
+      <p>
+        My expertise spans <strong>SQL, Python, JavaScript, WordPress, Data Analysis, and AI Automation in Education</strong>. I focus on creating actionable breakdowns, content, and tools that offer clear value and practical guidance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2 class="section-title">Services Provided</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Career Development & Coaching</h3>
+        <p>Interview preparation, career break recovery strategies, and transition mentoring into tech and government roles.</p>
+      </div>
+      <div class="card">
+        <h3>Digital & Content Marketing</h3>
+        <p>Lead generation, content strategy, brand building, and growth marketing consultancy for businesses and startups.</p>
+      </div>
+      <div class="card">
+        <h3>Educational Consulting</h3>
+        <p>EdTech content creation, structured syllabus planning for officer-level exams, and learning system design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2 class="section-title">Professional Experience</h2>
+    
+    <div class="timeline-item">
+      <div class="role-title">Marketing Consultant (Freelance)</div>
+      <div class="company-name">Nexkauf — Coimbatore, Tamil Nadu (Remote)</div>
+      <div class="date-range">Jul 2026 – Present</div>
+      <p>Driving digital marketing campaigns, sales partner acquisition strategies, and lead generation initiative planning.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="role-title">Executive & Director of Event Management</div>
+      <div class="company-name">Abivarman Academy — Erode, Tamil Nadu (Hybrid)</div>
+      <div class="date-range">Jun 2021 – Present</div>
+      <p>Leading product innovation, event operations, industry training programs, and educational outreach initiatives.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="role-title">Content Developer & Business Development Manager</div>
+      <div class="company-name">KavanagarKarjanai</div>
+      <div class="date-range">Mar 2021 – Jun 2024</div>
+      <p>Managed educational content production, learning material design, and strategic business growth outreach.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="role-title">Software Prod & Plat Engineering Analyst</div>
+      <div class="company-name">Accenture — Bengaluru, Karnataka</div>
+      <div class="date-range">May 2018 – Feb 2021</div>
+      <p>Collaborated with cross-functional product development teams, engineered solutions using MySQL, VB.NET, REST APIs, and led software quality assurance workflows.</p>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects">
+    <h2 class="section-title">Featured Engineering Projects</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Optimal Energy Management Controller</h3>
+        <p>Design and implementation of an optimal energy controller for effective utilization of solar-powered online UPS systems.</p>
+        <div class="badge-container">
+          <span class="badge">Solar Energy</span>
+          <span class="badge">Embedded Systems</span>
+          <span class="badge">Energy Management</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>SMART HOME – Energy Efficient Building</h3>
+        <p>Developed a smart home automation architecture designed to optimize energy consumption using IoT components.</p>
+        <div class="badge-container">
+          <span class="badge">Internet of Things (IoT)</span>
+          <span class="badge">Home Automation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="section-title">Core Skills & Certifications</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Technical Stack</h3>
+        <div class="badge-container">
+          <span class="badge">Python</span>
+          <span class="badge">SQL / MySQL</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">REST APIs</span>
+          <span class="badge">WordPress</span>
+          <span class="badge">HTML5/CSS3</span>
+          <span class="badge">Agile Methodologies</span>
+          <span class="badge">AWS / Azure</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Education & Credentials</h3>
+        <p><strong>B.E. Electrical & Electronics Engineering</strong><br />Kongu Engineering College (2014 – 2018)</p>
+        <br />
+        <p><strong>Master of Business Administration (General)</strong><br />Jobaaj Learnings</p>
+        <br />
+        <div class="badge-container">
+          <span class="badge">Kaggle Certified in Pandas</span>
+          <span class="badge">BEC Cambridge English</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="card" style="text-align: center;">
+      <p>Open for collaborations in EdTech content, career guidance sessions, and digital marketing consulting.</p>
+      <br />
+      <a href="https://www.linkedin.com" target="_blank" class="btn"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Abinayasree Muthusamy. Built with HTML & CSS.</p>
+  </footer>
+
+</body>
+</html>
